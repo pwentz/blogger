@@ -17,7 +17,6 @@ class ArticlesController < ApplicationController
   def create
     article = Article.new(article_params)
     if article.save
-
       flash.notice = "#{article.title} created!"
       redirect_to articles_path
     else

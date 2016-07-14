@@ -5,12 +5,13 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-5.times do
-  Article.create(title: Faker::Book.title,
-                 body: Faker::ChuckNorris.fact)
-end
+#5.times do
+  #Article.create(title: Faker::Book.title,
+   #              body: Faker::ChuckNorris.fact)
+#end
 
-26.times do
-  Comment.create(author_name: Faker::Name.name,
-                 body: Faker::Hipster.sentence)
-end
+
+#26.times do
+  #Comment.create(author_name: Faker::Name.name,
+   #              body: Faker::Hipster.sentence)
+#end
