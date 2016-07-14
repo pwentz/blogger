@@ -1,5 +1,8 @@
 %h4= @article.title
-= simple_format(@article.tag_list)
+%p
+  Tags:
+  - @article.tags.each do |tag|
+    = link_to tag.name, tag_path(tag)
 
 = simple_format(@article.body)
 
