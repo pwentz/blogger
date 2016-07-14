@@ -9,6 +9,7 @@ Rails.application.routes.draw do
       resources :comments
     end
     resources :tags
+    resources :authors
   end
 
   # You can have the root of your site routed with "root"
