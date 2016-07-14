@@ -6,4 +6,8 @@
 %br/
 = link_to 'Remove article', article_path(@article), method: :delete
 %br/
+
+%h3 Comments(#{@article.comments.count})
+= render partial: 'articles/comment', collection: @article.comments
+= render partial: 'comments/form'
 = link_to 'Back to articles', articles_path

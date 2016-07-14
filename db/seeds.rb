@@ -9,3 +9,8 @@
   Article.create(title: Faker::Book.title,
                  body: Faker::ChuckNorris.fact)
 end
+
+26.times do
+  Comment.create(author_name: Faker::Name.name,
+                 body: Faker::Hipster.sentence)
+end
