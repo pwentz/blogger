@@ -1,0 +1,9 @@
+%h4= @article.title
+
+= simple_format(@article.body)
+
+= link_to 'Edit article', edit_article_path(@article)
+%br/
+= link_to 'Remove article', article_path(@article), method: :delete
+%br/
+= link_to 'Back to articles', articles_path
